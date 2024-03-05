@@ -2,11 +2,10 @@ import { StyleSheet, Image} from 'react-native';
 import { Text, View, } from '@/src/components/Themed';
 import Colors from '@/src/constants/Colors';
 
-const ProductListItem = ({product}) =>{
+const ProductListItem = ({product}) => {
   return (
     <View style={styles.container}>
       <Image source={{ uri: product.image }} style={styles.image}/>
-
       <Text style={styles.title}>{product.name}</Text>
       <Text style={styles.price}>${product.price}</Text>
     </View>
